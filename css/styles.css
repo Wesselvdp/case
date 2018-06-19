@@ -1,0 +1,200 @@
+@font-face {
+  font-family: 'ArchivoBlack-Regular';
+  src: url("../Assets/webfonts/ArchivoBlack-Regular.eot");
+  /* IE9 Compat Modes */
+  src: url("../Assets/webfonts/ArchivoBlack-Regular.eot?#iefix") format("embedded-opentype"), url("../Assets/webfonts/ArchivoBlack-Regular.woff") format("woff"), url("../Assets/webfonts/ArchivoBlack-Regular.ttf") format("truetype"), url("../Assets/webfonts/ArchivoBlack-Regular.svg#svgArchivoBlack-Regular") format("svg");
+  /* Legacy iOS */ }
+@font-face {
+  font-family: 'Akkurat-Light';
+  src: url("../Assets/webfonts/Akkurat-Light.eot");
+  /* IE9 Compat Modes */
+  src: url("../Assets/webfonts/Akkurat-Light.eot?#iefix") format("embedded-opentype"), url("../Assets/webfonts/Akkurat-Light.woff") format("woff"), url("../Assets/webfonts/Akkurat-Light.ttf") format("truetype"), url("../Assets/webfonts/Akkurat-Light.svg#svgAkkurat-Light") format("svg");
+  /* Legacy iOS */ }
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1600px !important; } }
+html {
+  font-size: 16px; }
+  @media (max-width: 1300px) {
+    html {
+      font-size: 15px; } }
+  @media screen and (max-width: 1100px) {
+    html {
+      font-size: 14px; } }
+
+body {
+  color: black;
+  margin-top: 41px;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  font-family: 'Akkurat-Light'; }
+  @media (max-width: 1300px) {
+    body {
+      margin: 1rem; } }
+
+nav {
+  font-size: 16px; }
+  nav .dot-divider a::after {
+    content: "";
+    background: #DF3A1D;
+    width: 7px;
+    height: 7px;
+    -webkit-border-radius: 3.5px;
+    -moz-border-radius: 3.5px;
+    -ms-border-radius: 3.5px;
+    border-radius: 3.5px;
+    vertical-align: middle;
+    display: inline-block;
+    margin-left: 2rem;
+    margin-right: 2rem; }
+    @media screen and (max-width: 991px) {
+      nav .dot-divider a::after {
+        display: none; } }
+  nav li a {
+    font-size: 1.3125em; }
+  nav .btn-signup {
+    line-height: 1.4375rem;
+    font-size: 1.1875rem;
+    color: black;
+    padding: 0.946875rem 2.4rem;
+    font-weight: 600;
+    box-sizing: border-box;
+    border-color: black;
+    border-radius: 0px;
+    border-width: 3px; }
+    nav .btn-signup:hover {
+      background-color: black;
+      border-color: black; }
+
+.heading-text {
+  line-height: 1.3;
+  letter-spacing: -1.44px;
+  font-family: 'ArchivoBlack-Regular';
+  font-size: 4.8125em; }
+
+.red_1 {
+  color: #DF3A1D; }
+
+.red_2 {
+  color: #D5604D; }
+
+.pre-heading-text {
+  font-size: 1.125em;
+  letter-spacing: 5.53px; }
+
+.after-heading-text {
+  font-size: 1.75em;
+  letter-spacing: -0.52px;
+  line-height: 1.7; }
+
+.after-heading-text2 {
+  font-size: 1.75em; }
+
+.heading-icon {
+  position: absolute;
+  z-index: 10;
+  -webkit-mask-image: url("../Assets/stopwatch-mask.svg");
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: 36rem 44rem;
+  -webkit-mask-position: 0px 0px;
+  background: linear-gradient(rgba(255, 73, 41, 0.45), rgba(255, 73, 41, 0.45)), url("../Assets/background-image.jpg") no-repeat -38.4375rem 0rem; }
+  @media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min--moz-device-pixel-ratio: 2), screen and (-moz-min-device-pixel-ratio: 2), screen and (-o-min-device-pixel-ratio: 2 / 1), screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+    .heading-icon {
+      background: linear-gradient(rgba(255, 73, 41, 0.45), rgba(255, 73, 41, 0.45)), url("../Assets/background-image@2x.jpg") no-repeat -38.4375rem 0rem;
+      background-size: 90rem 59.5rem; } }
+
+.laptop_bg {
+  position: absolute;
+  background: url("../Assets/laptop-preview.png") no-repeat 0px 40px;
+  z-index: 99; }
+  @media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min--moz-device-pixel-ratio: 2), screen and (-moz-min-device-pixel-ratio: 2), screen and (-o-min-device-pixel-ratio: 2 / 1), screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+    .laptop_bg {
+      background: url("../Assets/laptop-preview@2x.png") no-repeat 0px 40px;
+      background-size: 34.375rem 37.875rem; } }
+  @media (max-width: 1300px) {
+    .laptop_bg {
+      background-size: 31.15rem auto; } }
+
+.btn-heading-custom-styles {
+  position: relative;
+  font-size: 1.8125em;
+  letter-spacing: -0.034rem;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  border-radius: 0;
+  background: black;
+  transition: 0.3s linear;
+  border: none;
+  left: -11rem;
+  padding: 3.2rem 6.625rem 3.2rem 11rem; }
+  .btn-heading-custom-styles:hover {
+    border: none;
+    background: black; }
+    .btn-heading-custom-styles:hover .arrow {
+      margin-left: 3rem; }
+    .btn-heading-custom-styles:hover::after {
+      transform: scale(1.03); }
+  .btn-heading-custom-styles::after {
+    content: "";
+    background: #FF4929;
+    width: 11.125rem;
+    display: inline-block;
+    position: absolute;
+    top: -1.125rem;
+    right: -1.125rem;
+    bottom: -1.125rem;
+    z-index: -1;
+    transition: 0.3s cubic-bezier(0.63, 0.03, 0.57, 1.55); }
+
+.arrow {
+  position: absolute;
+  transition-duration: 0.3s;
+  transition-timing-function: cubic-bezier(0.63, 0.03, 0.57, 1.55);
+  margin-left: 1em; }
+  .arrow::after {
+    content: "";
+    background: none;
+    height: 20.78px;
+    width: 20.78px;
+    display: inline-block;
+    vertical-align: middle;
+    transform: rotate(45deg);
+    transform-origin: center;
+    border-left: 0px;
+    border-top: 2px;
+    border-right: 2px;
+    border-bottom: 0;
+    border-color: white;
+    border-style: solid; }
+  .arrow::before {
+    content: "";
+    background: white;
+    display: inline-block;
+    width: 29.4px;
+    height: 2px;
+    vertical-align: middle;
+    margin-right: -22px; }
+
+.btn-heading-wrapper-styles {
+  z-index: 99;
+  margin-top: 10.375rem;
+  position: relative; }
+
+.heading-content {
+  margin-top: 3.49808rem; }
+
+.heading-container {
+  margin-top: 4.24375rem;
+  max-width: 1800px; }
+  @media screen and (max-width: 1200px) {
+    .heading-container {
+      margin-top: 1rem; } }
+
+#laptop-preview {
+  opacity: 0; }
+
+#btnSignup {
+  margin-left: -100%; }
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,19 @@
+// _webfonts.scss
+
+@font-face {
+	font-family: 'ArchivoBlack-Regular';
+	src: url('../Assets/webfonts/ArchivoBlack-Regular.eot'); /* IE9 Compat Modes */
+	src: url('../Assets/webfonts/ArchivoBlack-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	     url('../Assets/webfonts/ArchivoBlack-Regular.woff') format('woff'), /* Modern Browsers */
+	     url('../Assets/webfonts/ArchivoBlack-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+	     url('../Assets/webfonts/ArchivoBlack-Regular.svg#svgArchivoBlack-Regular') format('svg'); /* Legacy iOS */
+	}
+
+@font-face {
+	font-family: 'Akkurat-Light';
+	src: url('../Assets/webfonts/Akkurat-Light.eot'); /* IE9 Compat Modes */
+	src: url('../Assets/webfonts/Akkurat-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	     url('../Assets/webfonts/Akkurat-Light.woff') format('woff'), /* Modern Browsers */
+	     url('../Assets/webfonts/Akkurat-Light.ttf')  format('truetype'), /* Safari, Android, iOS */
+	     url('../Assets/webfonts/Akkurat-Light.svg#svgAkkurat-Light') format('svg'); /* Legacy iOS */
+	}

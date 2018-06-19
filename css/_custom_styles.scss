@@ -1,0 +1,227 @@
+// All custom styles
+
+html {
+	font-size: 16px;
+	@media (max-width: 1300px) {
+		font-size: 15px;
+	}
+	@media screen and (max-width: 1100px) {
+		font-size: 14px;
+	}
+}
+
+body {
+	color: black;
+	margin: {
+		top: 41px;
+		left: 2rem;
+		right: 2rem;
+	}
+	font: {
+		family: 'Akkurat-Light';
+	}
+	@media (max-width: 1300px) {
+		margin: 1rem;
+	}
+
+}
+
+nav {
+	font-size: 16px;
+	.dot-divider a {
+		&::after {
+			content: "";
+			background: $yikanRed_1;
+			width: 7px;
+			height: 7px;
+			@include border-radius(3.5px);
+			vertical-align: middle;
+			display: inline-block;
+			margin: {
+				left: 2rem;
+				right: 2rem;
+			}
+			@media screen and (max-width: 991px) {
+				display: none;
+			}
+		}
+	}
+	li a {
+			font-size: em(21px);
+		}
+	.btn-signup {
+	line-height: 1.4375rem;
+	font-size: 1.1875rem;
+	color: black;
+	padding: 0.946875rem 2.4rem;
+	font-weight: 600;
+	box-sizing: border-box;
+	border: {
+		color: black;
+		radius: 0px;
+		width: 3px;
+	}
+	&:hover {
+		background-color: black;
+		border-color: black;
+	}
+}
+}
+
+
+
+.heading-text{
+	line-height: 1.3;
+	letter-spacing: -1.44px;
+	font: {
+		family: 'ArchivoBlack-Regular';
+		size: em(77px);
+	}
+}
+
+.red_1 {
+	color: $yikanRed_1;
+}
+
+.red_2 {
+	color: $yikanRed_2
+}
+
+
+
+.pre-heading-text {
+	font-size: em(18px);
+	letter-spacing: 5.53px;
+}
+
+.after-heading-text {
+	font-size: em(28px);
+	letter-spacing: -0.52px;
+	line-height: 1.7;
+}
+
+.after-heading-text2 {
+	font-size: em(28px);
+}
+
+.heading-icon {
+	position: absolute;
+	z-index: 10;
+	-webkit-mask: {
+		image: url("../Assets/stopwatch-mask.svg");
+		repeat: no-repeat;
+		size: 36rem 44rem;
+		position: 0px 0px;
+	}
+    @include imgRetinaGradient(background-image, jpg, 90rem, 59.5rem, -38.4375rem, 0rem);
+}
+
+.laptop_bg {
+	position:absolute;
+	@include imgRetina(laptop-preview, png, 34.375rem, 37.875rem, 0px, 40px);
+	z-index: 99;
+	@media (max-width: 1300px) {
+	background-size: 31.15rem auto;
+	 }
+}
+.btn-heading-custom-styles {
+	position: relative;
+	font-size: em(29px);
+	letter-spacing: -0.034rem;
+	@include border-radius(0);
+	background: black;
+	transition: 0.3s linear;	
+	border: none;
+	left: -11rem;
+	padding: 3.2rem 6.625rem 3.2rem 11rem;
+	&:hover {
+		border: none;
+		background: black;
+		.arrow {
+			margin-left: 3rem;
+		}
+		&::after {
+			transform: scale(1.03);
+		}
+	}
+	
+
+	&::after {
+		content: "";
+		background: $yikanRed_3;
+		width: 11.125rem;
+		display: inline-block;
+		position: absolute;
+		top: -1.125rem;
+		right: -1.125rem;
+		bottom: -1.125rem;
+		z-index: -1;
+		transition: 0.3s cubic-bezier(0.63, 0.03, 0.57, 1.55);
+	}
+
+}
+
+.arrow {
+	position: absolute;
+	transition: {
+		duration: 0.3s;
+		timing-function: cubic-bezier(0.63, 0.03, 0.57, 1.55);
+	}
+	margin-left: 1em;
+	&::after {
+		// Arrow head
+		content: "";
+		background: none;
+		height: 20.78px;
+		width: 20.78px;
+		display: inline-block;
+		vertical-align: middle;
+		transform: rotate(45deg);
+		transform-origin: center;
+		border: {
+			left: 0px;
+			top: 2px;
+			right: 2px;
+			bottom: 0;
+			color: white;
+			style: solid;
+		}
+	}
+	&::before {
+		// Arrow straight line
+		content: "";
+		background: white;
+		display: inline-block;
+		width: 29.4px;
+		height: 2px;
+		vertical-align:middle;
+		margin-right: -22px;
+	}
+	
+}
+
+.btn-heading-wrapper-styles {
+	z-index: 99;
+	margin-top: 10.375rem;
+	position: relative;
+}
+
+.heading-content {
+	margin-top: 3.49808rem;
+}
+
+.heading-container {
+	margin-top: 4.24375rem;
+	@media screen and (max-width: 1200px) {
+		margin-top: 1rem;
+	}
+	max-width: 1800px;
+}
+
+#laptop-preview {
+	opacity: 0;
+}
+
+#btnSignup {
+ margin-left: -100%;
+}
